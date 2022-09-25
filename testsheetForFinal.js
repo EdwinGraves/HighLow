@@ -5,6 +5,7 @@
 var maxNumb = document.getElementById("maxNumb");
 var maxValidation = true;
 var maxNumber = Math.round(prompt("Enter the maximum number to guess."));
+var guessList = [];
 
 //Validate the number//
 while (maxValidation) {
@@ -19,11 +20,11 @@ while (maxValidation) {
 var randomNumber = Math.floor(Math.random() * maxNumber) + 1;
 console.log(randomNumber);
 
-let guessList = [guess];
-for (var i = 0; guess === randomNumber; i++) {
-  guessList.push(guess);
-}
-console.log(guessList);
+// let guessList = [guess];
+// for (var i = 0; guess === randomNumber; i++) {
+//   guessList.push(guess);
+// }
+// console.log(guessList);
 
 //Compare numbers and display result message
 
@@ -40,6 +41,7 @@ function higherLower() {
     //Correct
   } else if (guess == randomNumber) {
     message.innerHTML = "You got it. Great job!";
+    console.log(guessList, guess);
     //Too low
   } else if (guess < randomNumber) {
     message.innerHTML = "You guessed too low, please guess again.";
@@ -48,6 +50,7 @@ function higherLower() {
     message.innerHTML = "You guessed too high, please guess again.";
   }
   console.log(guess);
+  guessList.push(guess);
   return guess;
 }
 
