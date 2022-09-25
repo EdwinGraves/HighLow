@@ -1,0 +1,32 @@
+/* CSS TEST SHEET */
+
+body {
+  text-align: center;
+  background-color: #eef1ff;
+}
+
+.title {
+  padding: 50px;
+}
+
+#guess {
+  width: 25%;
+  margin: auto;
+}
+
+.btn {
+  margin: 15px 0 30px;
+}
+
+.form-group {
+  margin: 5px;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.message {
+  /* margin: 30px; */
+  margin: auto;
+}

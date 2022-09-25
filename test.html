@@ -1,0 +1,53 @@
+<!-- THIS IS A TEST PAGE BEFORE YOU FINISH THE REAL ASSIGNMENT -->
+<!-- Make sure to change back Javascript and CSS sheet for final, you have the test ones equipped!! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Test.css" />
+    <title>Higher Lower</title>
+  </head>
+
+  <body>
+    <div class="container title">
+      <h1>Higher - Lower</h1>
+      <p id="maxNumb"></p>
+
+      <div class="row">
+        <div class="col-lg col-md-6">
+          <form autocomplete="off">
+            <div class="form-group">
+              <label class="label">Your guess:</label>
+              <input type="text" id="guess" class="form-control" />
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="higherLower()"
+            >
+              Guess
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <p class="container message" id="message"></p>
+    </div>
+    <script src="testsheetForFinal.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
